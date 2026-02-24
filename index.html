@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADS 352 Dönem Ödevi</title>
+    <style>
+        /* Genel Ayarlar */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f8;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Navigasyon Menüsü */
+        header {
+            background-color: #008b8b;
+            /* Koyu Cyan */
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        /* Hero Bölümü (Giriş) */
+        .hero {
+            background: linear-gradient(135deg, #00ffff, #008b8b);
+            color: white;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        /* Ana İçerik Alanı */
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        section {
+            background: white;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            border-left: 5px solid #00ffff;
+            /* Cyan şerit */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        h2 {
+            color: #008b8b;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        /* Yetenekler Listesi */
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill-item {
+            background: #e0ffff;
+            color: #008b8b;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+
+        /* İletişim Formu (Görsel Amaçlı) */
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #008b8b;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.8rem;
+            color: #777;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="#hakkimda">Hakkımda</a>
+            <a href="#yetenekler">Yetenekler</a>
+            <a href="#iletisim">İletişim</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h1>Merhaba, Ben Cemal Berkay Bağrıaçık</h1>
+        <p>Yazılım Geliştirici & Tasarım Meraklısı</p>
+    </div>
+
+    <div class="container">
+
+        <section id="hakkimda">
+            <h2>Hakkımda</h2>
+            <p>Seçmeli yazılım dersi kapsamında
+                geliştirdiğim bu projede temel HTML ve CSS yeteneklerimi sergiliyorum.
+                İlgi alanlarım makine öğrenmesi, son kullanıcıya yönelik program geliştirme.
+                Hobilerim ise popüler bilim takip etmek, dizi izlemek, oyun oynamak ve kod yazmak.
+            </p>
+        </section>
+
+        <section id="yetenekler">
+            <h2>Yetenekler</h2>
+            <div class="skills-list">
+                <span class="skill-item">Python</span>
+                <span class="skill-item">C</span>
+                <span class="skill-item">Java</span>
+                <span class="skill-item">C#</span>
+                <span class="skill-item">Problem Çözme</span>
+                <span class="skill-item">Hızlı Öğrenme</span>
+            </div>
+        </section>
+
+        <section id="iletisim">
+            <h2>İletişim</h2>
+            <p>Bana ulaşmak için aşağıdaki formu kullanabilir veya e-posta gönderebilirsiniz.</p>
+            <form action="#">
+                <input type="text" placeholder="Adınız Soyadınız">
+                <input type="email" placeholder="E-posta Adresiniz">
+                <textarea rows="4" placeholder="Mesajınız"></textarea>
+                <button type="button">Gönder</button>
+            </form>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2024 - Tüm Hakları Saklıdır.</p>
+    </footer>
+
+</body>
+
+</html>
